@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Title -->
+  <title>Bootstrap</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar d-flex align-items-center">
+    <!-- TopBar -->
+    <div class="container-fluid d-flex align-items-center">
+      <nav class="nav mx-auto mx-md-0 m-0 px-0">
+        <!-- Menu -->
+        <a href="index.html" class="nav-item nav-link">Site Map</a>
+        <a href="index.html" class="nav-item nav-link">Archives</a>
+        <a href="index.html" class="nav-item nav-link">Pages</a>
+        <!-- End Menu -->
+      </nav>
+      <nav class="nav mx-auto mx-md-0 m-0 px-0">
+        <form class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="topBarSearch">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="topBarSearch">Search</button>
+          </div>
+        </form>
+      </nav>
+    </div>
+    <!-- End TopBar -->
+    
+    <!-- Logo + Responsive Img -->
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-sm-4 col-12" id="logo">
+          <img class="img-fluid" src="assets/img/logo.png" alt="company logo" />
+        </div>
+        <div class="col-sm-8 col-12" id="responsive-img">
+          <img class="img-fluid" src="https://placehold.it/850x90/007bff/ffffff/&amp;text=Responsive Img" alt="advertisement">
+        </div>
+      </div>
+    </div>
+    <!-- EndLogo + Responsive Img -->
+
+    <!-- Navbar Menu -->
+    <div class="container-fluid">
+      <ul class="nav w-100 overflow justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Softwares</a></li>
+      </ul>
+    </div>
+    <!-- End Navbar Menu -->
+  </header>
+  <!-- End Header -->
+
+  <hr />
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Divided -->
+    <div class="row">
+      <!-- Article -->
+      <div class="col-12 col-lg-9">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb p-3 bg-light">
+            <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a href="#">Static</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumbs -->
+
+        <!-- Article -->
+        <div class="border rounded p-3">
+          <article>
+            <h3>About</h3>
+            <small>Published a month ago </small> <small>by <a href="">Author</a></small>
+            <hr/>
+            <h5>About Bootstrap</h5>
+            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+            <hr/>
+            <h5>Contact Us</h5>
+            <p>Feel free to get in touch with us via the form below.</p>
+            <form onsubmit="startProgress()" class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMail">Email</label>
+                <input type="email" class="form-control" id="inputMail" placeholder="example@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label for="inputCateg">Contact Category</label>
+                <select class="custom-select" id="inputCateg" required>
+                  <option value="Question">Question</option>
+                  <option value="Request">Request</option>
+                  <option value="Help">Help</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputMsg">Message</label>
+                <textarea rows="5" type="text" class="form-control" id="inputMsg" placeholder="Please enter a message in the textarea." required></textarea>
+              </div>
+              <div class="form-group custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="invalidSwitch" required>
+                <label class="custom-control-label" for="invalidSwitch">Switch to Agree</label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="submit-form" class="btn btn-primary">Submit Form</button>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </form>
+            <hr/>
+            <h5>Frequently Asked Question</h5>
+            <p>Some Frequently Asked Question about this blog.</p>
+            <div class="accordion" id="accordionFAQ">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- End Article -->
+      </div>
+      <!-- End Article -->
+
+      <!-- Sidebar -->
+      <aside class="col-12 col-lg-3">
+        <!-- Popular Post -->
+        <section id="popular">
+          <h5 class="bg-light card-header p-3 rounded">Popular Posts</h5>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="article.html">Smartphone on Table</a></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="article.html">Beach and Hill</a></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="article.html">Town across the River</a></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="article.html">Girl with Pumpkin</a></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="article.html">Lake in British</a></li>
+          </ul>
+        </section>
+        <!-- End Popular Post -->
+        <hr/>
+        <!-- Label -->
+        <section id="label">
+          <h5 class="bg-light card-header p-3 rounded">Label</h5>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Movies</a><span class="badge badge-primary badge-pill">14</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Games</a><span class="badge badge-primary badge-pill">2</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Aplication</a><span class="badge badge-primary badge-pill">1</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Life Hacks</a><span class="badge badge-primary badge-pill">14</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Games</a><span class="badge badge-primary badge-pill">2</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="">Aplication</a><span class="badge badge-primary badge-pill">1</span></li>
+          </ul>
+        </section>
+        <!-- End Label -->
+      </aside>
+      <!-- End Sidebar -->
+
+    </div>
+    <!-- End Divided -->
+  </main>
+  <!-- End Main Container -->
+
+  <hr />
+
+  <!-- Footer -->
+  <footer class="navbar d-flex align-items-center">
+    <div class="container-fluid">
+      <div id="about" class="col-lg-6 mx-auto text-center">
+        <h5>About Bootstrap</h5>
+        <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+    <!-- Footer Bar -->
+    <div class="container-fluid d-flex align-items-center">
+      <nav class="nav mx-auto mx-md-0 m-0 px-0">
+        <!-- Menu -->
+        <a href="static.html" class="nav-item nav-link">About</a>
+        <a href="static.html" class="nav-item nav-link">Privacy</a>
+        <a href="static.html" class="nav-item nav-link">Disclaimer</a>
+        <!-- End Menu -->
+      </nav>
+      <nav class="nav mx-auto mx-md-0 m-0 px-0">
+        <span class="navbar-text">&copy; 2019</span>
+      </nav>
+    </div>
+    <!-- End Footer Bar -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Script -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+  // Forms Validation
+  $(document).ready(function(){
+    $(".progress").hide();
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+  
+  // Progress Bar  
+  function startProgress() {
+    $(".progress").show();
+    $(".progress-bar").animate({
+        width: "100%"
+      }, 2500);
+  }
+  </script>
+  <!-- End Script -->
+</body>
+</html>
